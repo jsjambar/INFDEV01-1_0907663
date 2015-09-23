@@ -1,6 +1,6 @@
-# Get number
+﻿# Get number
 fahrenheit = input("What number do you want to convert?")
-# Convert to integer
+# Convert to float cause of decimals.
 fahrenheit  = float(fahrenheit)
 # Formula for Fahrenheit to Celsius = (fahrenheit - 32) * 5/9
 celsius     = round((fahrenheit - 32) * 5/9, 2)
