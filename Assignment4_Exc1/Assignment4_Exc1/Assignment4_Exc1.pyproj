@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd952ef9-dff3-463e-b7a9-d223bc007654</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Assignment4_Exc1b.py</StartupFile>
+    <StartupFile>Assignment4_Exc1c.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,9 @@
   <ItemGroup>
     <Compile Include="Assignment4_Exc1.py" />
     <Compile Include="Assignment4_Exc1b.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assignment4_Exc1c.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
