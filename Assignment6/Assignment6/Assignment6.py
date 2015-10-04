@@ -1,5 +1,5 @@
-﻿height          = int(input("What should be the height of the figures?"))
-width           = int(input("What should be the width of the figures?"))
+﻿height          = int(input("What should be the height of the figures? "))
+width           = int(input("What should be the width of the figures? "))
 figureString    = ""
 
 '''
@@ -81,9 +81,9 @@ for y in range(0, height):
 
 print(figureString)
 figureString = ""
-
-
 '''
+
+
 # A full circle.
 print("A full circle.")
 
@@ -95,3 +95,41 @@ for y in range(0, height):
 
 print(figureString)
 figureString = ""
+
+
+'''
+# Ugly face.
+for y in range(0, 10):
+    for x in range(0, 10):
+        if((y == 0 or y == 8) and x > 3 and x < 7):
+            figureString += "*"
+        elif((y == 1 or y == 7) and (x == 3 or x == 7)):
+            figureString += "*"
+        elif((y == 2 or y == 6) and (x == 2 or x == 8)):
+            figureString += "*"
+        # Eyebrows
+        elif(y == 2 and (x == 3 or x == 7)):
+            figureString += "_"
+        elif((y == 3 or y == 4 or y == 5) and (x == 1 or x == 9)):
+            figureString += "*"
+        # Eyes
+        elif(y == 3 and (x == 3 or x == 7)):
+            figureString += "o"
+        # Upper part of mouth
+        elif(y == 5 and x == 3):
+            # \\ because we use the first \ to escape the character '\' itself.
+            figureString += "\\"
+        elif(y == 5 and x == 5):
+            figureString += "#"
+        elif(y == 5 and x == 7):
+            figureString += "/"
+        # Lower part of mouth
+        elif(y == 6 and (x == 4 or x == 5 or x == 6)):
+             figureString += "-"
+        else:
+            figureString += " "
+
+    figureString += "\n"
+
+print(figureString)
+'''
