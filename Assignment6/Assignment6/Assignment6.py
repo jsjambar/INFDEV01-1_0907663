@@ -1,4 +1,5 @@
-﻿height          = int(input("What should be the height of the figures? "))
+﻿import math
+height          = int(input("What should be the height of the figures? "))
 width           = int(input("What should be the width of the figures? "))
 figureString    = ""
 
@@ -87,9 +88,26 @@ figureString = ""
 # A full circle.
 print("A full circle.")
 
-for y in range(0, height):
+# Center
+center = width / 2
 
-
+for y in range(0, width):
+    # Get the distance between the center and current index (y)
+    distance_y = (center - y) * (center - y)
+    for x in range(0, width):
+        # Get the distance between the center and the current index (x)
+        distance_x = (center - x) * (center - x)
+        # Calculate the total distance by adding the y-axis and x-axis distance and using the square root on this (because we did value * 2 on distance_y and distance_x)
+        distance = math.sqrt(distance_y + distance_x)
+        #print(center)
+        #print(distance)
+        # If the center is bigger than the distance, we can draw asterisk
+        # See it like this: it should draw at 0,15 but not at 0,20. this is why we require center being bigger than the distance
+        if(distance < center): 
+            figureString += "*"
+        else:
+            figureString += " "
+        
 
     figureString += "\n"
 
