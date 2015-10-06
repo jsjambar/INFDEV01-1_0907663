@@ -135,12 +135,12 @@ for y in range(0, width):
         if(distance == 0):
             figureString += "#"
         # eyes
-        elif(distance == 5 and y == (width / 2.5)):
+        elif(distance == 5 and y == (center - 3)):
             figureString += "o"
         # smiley
         elif(distance == 5 and y > center):
             figureString += "-"
-        # face 
+        # face smiley
         elif(distance < center and distance > (center / 1.2)): 
             figureString += "*"
         else:
