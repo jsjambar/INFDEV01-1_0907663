@@ -113,7 +113,7 @@ print(figureString)
 figureString = ""
 
 # A full circle.
-print("A full circle.")
+print("A beautiful face.")
 
 # Center
 center = width / 2

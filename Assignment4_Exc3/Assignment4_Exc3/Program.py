@@ -33,13 +33,14 @@ def Program():
     #W = 119
     #A = 97
     #D = 100
-
+    #C = 99
 
     #---------------------------------------------------------------------
     #                  PUT YOUR CODE BELOW
     #---------------------------------------------------------------------
     
     userInput = get()
+    print(userInput)
     if(userInput == 119):
        forward(10)
 
@@ -47,6 +48,11 @@ def Program():
         turn(90)
     elif(userInput == 97):
         turn(-90)
+
+    if(userInput == 99):
+        change_color_to('red')
+    elif(userInput == 98):
+        change_color_to('black')
 
 
 run(Program)
