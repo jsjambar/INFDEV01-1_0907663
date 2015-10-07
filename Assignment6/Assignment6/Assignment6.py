@@ -100,7 +100,6 @@ for y in range(0, width):
         #print(center)
         #print(distance)
         # If the center is bigger than the distance, we can draw asterisk
-        # See it like this: it should draw at 0,15 but not at 0,20. this is why we require center being bigger than the distance
         if(distance < center): 
             figureString += "*"
         else:
